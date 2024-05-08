@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { Strategy } from '../strategy/strategy.interface';
+import { Strategy } from './strategy.interface';
 
 @Injectable()
 export class OrdersStrategy implements Strategy {

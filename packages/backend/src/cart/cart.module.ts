@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
 import { CartService } from './cart.service';
 import { CartController } from './cart.controller';
-import { StrategyId } from '../strategy/strategy.interface';
-import { CartStrategy } from './cart.strategy';
+import { StrategyId } from '../strategies/strategy.interface';
+import { CartStrategy } from '../strategies/cart.strategy';
 
 @Module({
   controllers: [CartController],

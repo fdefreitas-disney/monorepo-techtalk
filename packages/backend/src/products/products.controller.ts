@@ -7,7 +7,6 @@ export class ProductsController {
 
   @Get()
   getName() {
-    const name = this.service.getName();
-    return name;
+    return this.service.getName();
   }
 }

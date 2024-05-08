@@ -1,10 +1,9 @@
 import { Inject, Injectable } from '@nestjs/common';
-import { StrategyId } from '../strategy/strategy.interface';
-import { CartStrategy } from './cart.strategy';
+import { Strategy, StrategyId } from '../strategies/strategy.interface';
 
 @Injectable()
 export class CartService {
-  constructor(@Inject(StrategyId) private strategy: CartStrategy) {}
+  constructor(@Inject(StrategyId) private strategy: Strategy) {}
 
   getName(): string {
     return this.strategy.getName();
